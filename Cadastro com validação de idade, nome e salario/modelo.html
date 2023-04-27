@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+     <h1>Bem Vindo!</h1>
+
+    <section>
+
+        <div>
+            <div class="header" id="header">Cadastro:</div>
+
+            <p> <strong style="padding-right: 5px;">Nome :</strong>
+                <input type="text" name="nome" id="nome" style="width: 5cm; height: 20px ;">
+            </p>
+            
+            <p> <strong style="padding-right: 10px;">Idade :</strong>
+                <input type="number" name="idade" id="idade" style="width: 2cm; height: 20px;">
+            </p>
+            <p> <strong style="padding-right: 1px;">Salário:</strong>
+                <input type="text" name="Salario" id="salario" style="width: 2cm; height: 20px ;">
+            </p>
+            
+            <p> <strong>Sexo:</strong>
+
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc"><strong>M</strong></label>
+                
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem"><strong>F</strong></label>
+            </p>
+
+            
+
+            <p><strong>Estado civil:</strong>
+
+                
+                    <input type="radio" name="estciv" id="solt" checked>
+                    <label for="solt"><strong>Solteiro</strong></label>
+                </p>
+
+                <p style="padding-left: 124px
+                ;">
+                    <input type="radio" name="estciv" id="cas">
+                    <label for="cas"><strong>Casado</strong></label>
+                </p>
+
+                <p style="padding-left: 124px
+                ;">
+                    <input type="radio" name="estciv" id="viu">
+                    <label for="viu"><strong>Viuvo</strong></label>
+                </p>
+                
+                <p style="padding-left: 124px
+                ;">
+                    <input type="radio" name="estciv" id="div">
+                    <label for="div"><strong>Divorciado</strong></label>
+                </p>
+            </p>
+        </div>
+        <div id="baixo">
+            <input type="button"
+            id="bot"
+            value="Enviar" onclick="enviar()">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Luigi_Itamar</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
